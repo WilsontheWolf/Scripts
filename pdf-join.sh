@@ -13,7 +13,7 @@ for f in *; do
         then
             cp "$f" .pdf-join-tmp
         else 
-            lowriter --convert-to pdf "$f" --outdir .pdf-join-tmp
+            libreoffice --writer --convert-to pdf "$f" --outdir .pdf-join-tmp
         fi
     fi
 done
